@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="mdb/img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="mdb/fontawesome/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="mdb/css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="mdb/css/mdb.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <div class="quiz" id="page1">
+        <h1 class="text-secondary font-weight-bold dis p-5">Welcome</h1>
+        <div class="container" id="firstpage">
+            <button onclick="startQuiz()" class="btn-lg btn btn-pill btn-danger">Start Quiz</button>
+        </div>
+        <div id="questionpage">
+            <div class="container">
+                <div id="timer" class="time" style="text-align: center;"></div>
+            </div>
+            <div id="question">
+                <div class="font-weight-bold text-danger ara"><i></i></div>
+                <div class="container" id="questionDisplay"></div>
+            </div>
+            <div class="container">
+                <div id="indicator" style="display: table;"></div>
+                <div style="text-align: left; margin-top: 20px;">
+                    <p style="color: red;">Red color means you got the question wrong.</p>
+                    <p style="color: green;">Green color means you got the question right.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="mdb/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="mdb/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="mdb/js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript" src="quiz.js"></script>
+
+</body>
+
+</html>
